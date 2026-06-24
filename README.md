@@ -1,0 +1,10 @@
+# image_rgb
+
+### Инструкция по установке(Ручная):
+1) Клонировать репозиторий ```git clone https://github.com/AcroniS1337/image_rgb```
+2) Перейди в каталогскачанного репозитория(к примеру ```cd image_rgb```)
+3) Проверить наличие Python(```python --version```), если не установлен установить https://www.python.org/
+4) Создать виртуальное окружение через команду ```python -m venv venv  ```
+5) Активировать окружение ```venv\Scripts\activate.bat```
+6) Установить зависимости ```pip install -r requirements.txt```
+7) Запустить программу ```python main.py```
