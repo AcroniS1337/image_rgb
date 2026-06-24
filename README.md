@@ -7,4 +7,4 @@
 4) Создать виртуальное окружение через команду ```python -m venv venv  ```
 5) Активировать окружение ```venv\Scripts\activate.bat```
 6) Установить зависимости ```pip install -r requirements.txt```
-7) Запустить программу python main.py
+7) Запустить программу ```python main.py```
