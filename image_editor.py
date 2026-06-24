@@ -41,21 +41,17 @@ class ImageEditor:
         self.set_image(frame)
         return self.current
 
-    # --------------------------------------------------- channels ------------
-
     def extract_channel(self, channel: str) -> np.ndarray:
-        if self.original is None:
+        if self.current is None:
             raise ValueError("Изображение не загружено.")
         ch_map = {"R": 2, "G": 1, "B": 0}
         if channel not in ch_map:
             raise ValueError(
                 f"Неверный канал: {channel}. Используйте R, G или B.")
-        result = np.zeros_like(self.original)
+        result = np.zeros_like(self.current)
         idx = ch_map[channel]
-        result[:, :, idx] = self.original[:, :, idx]
+        result[:, :, idx] = self.current[:, :, idx]
         return result
-
-    # --------------------------------------------------- variant 17 ----------
 
     def resize(self, width: int, height: int) -> np.ndarray:
         if not self.has_image():
